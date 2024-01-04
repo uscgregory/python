@@ -36,7 +36,7 @@ PASSWORD = os.getenv('PASSWORD')
     ],
 )
 
-def verisk_sftp_transmit(file_names: str):
+def sftp_transmit(file_names: str):
     date_time_created = str(datetime.now().strftime("%Y.%m.%d.%I.%M"))
     month_year_created = str(datetime.now().strftime("%Y-%m"))
     
