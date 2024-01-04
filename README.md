@@ -1,7 +1,7 @@
 # Python Code Samples
 
-## Sample 1
-I had to create a script to make over 1 million api calls to one of our business partners, download the information, and prepare the data for ingestion into our warehouse.  Due to api constraints, we are limited to only 10 asynchronous calls at a time. In this code I use asyncio and aiohttp to make our synchronous calls. Those requests are limited to 10 by a semaphore wrapper.  I also use a ThreadPoolExecutor to expedite the processing/formatting of the raw data.
+### [File Transmission - Integration w/ Airplane](https://github.com/uscgregory/python/blob/main/README.md)
+This script runs within the Airplane.dev platform (hence the @airplane decorator). Airplane captures the selections from a JS React table and passes those selections as parameters to this script.  The script then retreives the appropriate files, transfers the files to our 3rd party reporting partners, and executes internal reconciliation tasks.
 
 ## Sample 2
 
